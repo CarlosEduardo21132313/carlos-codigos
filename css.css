@@ -1,0 +1,89 @@
+.list {
+    text-align: center;
+}
+
+#listas {
+    margin-top: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.list ul li {
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
+
+.list ul li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.3s;
+    color: white;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 200%;
+}
+
+.list ul li a:hover {
+    background-color: red;
+}
+
+.list ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    color: white;
+    background-color: gray;
+}
+
+.list ul li:hover ul {
+    display: block;
+}
+
+.list ul ul {
+    width: 100px;
+}
+
+.list ul ul li {
+    display: block;
+}
+
+.list ul ul li a {
+    font-size: 150%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: rgb(143, 167, 255);
+    background: linear-gradient(0deg, rgba(143, 167, 255, 1) 0%, rgba(45, 6, 83, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Times New Roman;
+    text-align: center;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+.quadradoT {
+    width: 500px;
+    height: 90px;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    left: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgb(211, 179, 255);
+    background: rgba(220, 143, 255, 1);
+    z-index: -1;
+}
